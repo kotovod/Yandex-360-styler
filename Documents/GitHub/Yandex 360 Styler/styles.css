@@ -1,0 +1,144 @@
+/* Дополнительные стили для Яндекс 360 ✽ Стилёк */
+
+/* Стили для улучшения отображения кастомизированных элементов */
+.yamail-custom-logo {
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    box-shadow: none !important;
+}
+
+.yamail-custom-logo:hover {
+    transform: scale(1.05);
+    box-shadow: none !important;
+}
+
+/* Стили для Retina дисплеев */
+.yamail-retina-logo {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: high-quality;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/* Дополнительные настройки для четкости на Retina */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .yamail-retina-logo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Стили для кастомизированных кнопок */
+.yamail-custom-button {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255, 127, 77, 0.15);
+}
+
+.yamail-custom-button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 127, 77, 0.25);
+}
+
+.yamail-custom-button:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 3px rgba(255, 127, 77, 0.2);
+}
+
+/* Защита кнопки синхронизации от окрашивания */
+.SyncButton-m__withGlobalBar--apeEJ {
+    --button-view-action-fill-color-base: initial !important;
+    color: initial !important;
+    background-color: initial !important;
+}
+
+
+/* Стили для кастомизированного меню */
+.yamail-custom-menu {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(150, 174, 254, 0.1);
+}
+
+.yamail-custom-menu:hover {
+    box-shadow: 0 4px 12px rgba(150, 174, 254, 0.15);
+}
+
+/* Стили для кастомизированного фона страницы */
+.yamail-custom-page-bg {
+    transition: background-color 0.3s ease;
+    background-attachment: fixed;
+}
+
+/* Анимация появления кастомизированных элементов */
+@keyframes yamail-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.yamail-custom-element {
+    animation: yamail-fadeIn 0.5s ease;
+}
+
+/* Дополнительные анимации для элементов Яндекс 360 */
+@keyframes yamail-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+.yamail-pulse {
+    animation: yamail-pulse 2s ease-in-out infinite;
+}
+
+/* Стили для улучшения контрастности */
+.yamail-enhanced-contrast {
+    filter: contrast(1.1) brightness(1.05);
+}
+
+/* Стили для градиентных акцентов */
+.yamail-gradient-accent {
+    background: linear-gradient(135deg, rgba(255, 127, 77, 0.1), rgba(150, 174, 254, 0.1));
+    border: 1px solid rgba(255, 127, 77, 0.2);
+}
+
+/* Стили для скрытия блоков в теме Labubu */
+.yamail-hide-blocks [class*="AdBlock"],
+.yamail-hide-blocks [class*="Advertisement"],
+.yamail-hide-blocks [class*="Promo"],
+.yamail-hide-blocks [class*="Banner"],
+.yamail-hide-blocks [class*="Recommendation"],
+.yamail-hide-blocks [class*="Suggest"],
+.yamail-hide-blocks [class*="Hint"],
+.yamail-hide-blocks [class*="Notification"],
+.yamail-hide-blocks [class*="Alert"],
+.yamail-hide-blocks [class*="Tip"],
+.yamail-hide-blocks [class*="Widget"],
+.yamail-hide-blocks [class*="Panel"],
+.yamail-hide-blocks [class*="Sidebar"],
+.yamail-hide-blocks div[data-testid*="ad"],
+.yamail-hide-blocks div[data-testid*="promo"],
+.yamail-hide-blocks div[data-testid*="banner"],
+.yamail-hide-blocks div[data-testid*="recommendation"],
+.yamail-hide-blocks div[data-testid*="suggest"],
+.yamail-hide-blocks div[data-testid*="hint"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}

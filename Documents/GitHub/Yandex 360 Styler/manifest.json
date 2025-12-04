@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "name": "Яндекс 360 ✽ Стилёк",
+  "version": "2.0",
+  "description": "Кастомизация интерфейса Яндекс 360 с готовыми темами",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["themes/*"],
+      "matches": [
+        "https://mail.yandex.ru/*",
+        "https://mail.yandex.com/*",
+        "https://mail.yandex-team.ru/*",
+        "https://disk.yandex.ru/*",
+        "https://disk.yandex-team.ru/*",
+        "https://docs.yandex.ru/*",
+        "https://docs.yandex-team.ru/*",
+        "https://calendar.yandex.ru/*",
+        "https://calendar.yandex-team.ru/*",
+        "https://telemost.yandex.ru/*",
+        "https://telemost.yandex-team.ru/*",
+        "https://admin.yandex.ru/*",
+        "https://boards.yandex.ru/*",
+        "https://send.yandex.ru/*",
+        "https://alicepro.yandex.ru/*",
+        "https://yandex.ru/*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://mail.yandex.ru/*",
+    "https://mail.yandex.com/*",
+    "https://mail.yandex-team.ru/*",
+    "https://disk.yandex.ru/*",
+    "https://disk.yandex-team.ru/*",
+    "https://docs.yandex.ru/*",
+    "https://docs.yandex-team.ru/*",
+    "https://calendar.yandex.ru/*",
+    "https://calendar.yandex-team.ru/*",
+    "https://telemost.yandex.ru/*",
+    "https://telemost.yandex-team.ru/*",
+    "https://admin.yandex.ru/*",
+    "https://boards.yandex.ru/*",
+    "https://send.yandex.ru/*",
+    "https://alicepro.yandex.ru/*",
+    "https://yandex.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.yandex.ru/*",
+        "https://mail.yandex.com/*",
+        "https://mail.yandex-team.ru/*",
+        "https://disk.yandex.ru/*",
+        "https://disk.yandex-team.ru/*",
+        "https://docs.yandex.ru/*",
+        "https://docs.yandex-team.ru/*",
+        "https://calendar.yandex.ru/*",
+        "https://calendar.yandex-team.ru/*",
+        "https://telemost.yandex.ru/*",
+        "https://telemost.yandex-team.ru/*",
+        "https://admin.yandex.ru/*",
+        "https://boards.yandex.ru/*",
+        "https://send.yandex.ru/*",
+        "https://alicepro.yandex.ru/*",
+        "https://yandex.ru/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Яндекс 360 ✽ Стилёк"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
